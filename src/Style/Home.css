@@ -1,0 +1,52 @@
+.home{
+
+    display: flex;
+    gap: 0px;               /* left-right spacing (wateta hidasak) */
+    height: 100vh;
+    width: 100%;
+               /* outer spacing from window edge */
+   
+    align-items: center;     /* vertical centering */
+    justify-content: center;
+    background: #f8f7fb;
+    
+    
+}
+
+
+
+.home .left{
+    width: 100%;
+     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: left;
+   
+    
+  
+   
+     
+}
+
+.home .right{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    justify-content: center;
+    background-color: darkkhaki;
+    
+    
+     
+}
+
+.home .left h1{
+    padding: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
