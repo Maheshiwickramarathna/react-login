@@ -2,8 +2,17 @@ import React from 'react'
 import BannerImage from '../Images/Me.jpg'
 import '../Style/Home.css'
 import { Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    
+    navigate("/about");
+  };
   return (
     <div className='home'>
         
@@ -15,7 +24,7 @@ export default function Home() {
                
                 <p><span id="x">Login</span><br></br>Unlock Your Journey, Login to Developerstack</p>
 
-                <form id="contact-form" method='POST'>
+                <form id="contact-form" onSubmit={handleLogin}>
                     <input type=" email" name="mail" placeholder="Enter Email"/>
                    
                     <input type="password" name="pwd" placeholder="xxxxxxxx"/>
