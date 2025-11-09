@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import Register from './Pages/Register';
 import About from './Pages/About';
 import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
 
 
 function Applaout(){
@@ -25,6 +26,7 @@ function Applaout(){
            <Route path='/About' element={<About />} />
             
       </Routes>
+      {!hideNavbar && <Footer/>}
       </div>
   );
 
